@@ -1,0 +1,65 @@
+<style>body {
+  text-align: left;
+        background: rgb(134,255,0);
+background: linear-gradient(90deg, rgba(134,255,0,0.2105042700674019) 0%, rgba(121,9,120,0.24691883589373254) 37%, rgba(0,212,255,0.2049020291710434) 100%); 
+  font-family: Helvetica;
+}
+
+h1 {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  background-color: #e9b5f5;
+  opacity: 0.7;
+  box-shadow: 0px 2px 5px grey;
+  transform: translateY(0px);
+  transition: all .2s;
+  font-family: monospace;
+  text-align: center;
+}</style>
+<h1>DeadCurly Exploit
+<p style="font-size: 15px;">by Codename<br></h1>
+
+<p>Have you used this exploit on this computer before?</p>
+
+<div onclick="if(document.getElementById('html').checked){
+     document.getElementById('setup').style.display = 'block';
+     }
+  else {document.getElementById('setup').style.display ='none';}">
+<input type="radio" id="html" name="used" value="y">
+<label for="html">Yes, I need to reactivate it.</label><br>
+<input type="radio" id="css" name="used" value="n" checked>
+<label for="css">No, I'm using it for the first time</label><br>
+</div>
+  
+<span id="setup">
+<h4>First-time Setup:</h4>
+
+<a href="https://chromewebstore.google.com/detail/deadname-remover/cceilgmnkeijahkehfcgfalepihfbcag">Install Deadname remover extension from the chrome web store.</a><br>
+settings page for the extension should automatically open, if not click the extension and hit settings<br>
+click &quot;show/hide&quot;<br>
+Under deadname settings set your first name to &quot;DENY&quot;<br>
+Under prefered name set your first name to the following:<br>
+<br>
+&lt;img onerror=&quot;alert('Activated, click OK.'); document.cookie='crextn_clear_cache_at=2024=01-21T05:59:59+00:00;'&quot; src=&quot;d.org&quot;&gt;&lt;/img&gt;<br>
+<br>
+<br>Click save
+<br></span>
+<span id="activation">
+<h4>ACTIVATION (do each time you want to activate it):</h4>
+
+<br>click the Deadname remover extension (it may be hidden in the extensions menu)and enable the big switch (if it is not already enabled).
+<br>Drag <a href="https://rebrand.ly/DeadCurly">THIS TEXT</a> into your bookmark bar, if you dont already have it bookmarked, and use the bookmark it creates.
+<br>click OK and the exploit is now active!
+<br>
+<h4>DEACTIVATION (disable the exploit):</h4>
+<br>go to the page you bookmarked
+<br>click on deadname remover and turn it off with the switch
+<br>click the lock/settings icon in the left of the url bar
+<br>click cookies.
+<br>click all the trash cans
+<br>click done
+<br>refresh and if you see DENY and some numbers and not a popup box you have disabled the exploit.
+
+</span>
