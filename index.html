@@ -1,3 +1,28 @@
+<script>
+function x() {
+  if (document.getElementById('yes').checked) {
+     document.getElementById('js').style.display = 'block';
+     document.getElementById('nojs').style.display = 'none';
+  }
+  else if (document.getElementById('no').checked) { 
+      document.getElementById('js').style.display ='none';
+      document.getElementById('nojs').style.display = 'block';
+  } else {
+    return
+  }
+}
+
+function dead() {
+  document.getElementById('activation').style.display = 'block';
+  if(!document.getElementById('html').checked){
+     document.getElementById('setup').style.display = 'block';
+  }
+  else {
+    document.getElementById('setup').style.display ='none';
+  }
+}
+</script>
+
 <style>body {
   text-align: left;
         background: rgb(134,255,0);
@@ -47,18 +72,38 @@ h4 {
   transition: all .2s;
   font-family: monospace;
   text-align: left;
-}</style>
-<h1>DeadCurly Exploit
+}</style><h1>DeadCurly Exploit
 <p style="font-size: 15px;"><a href="https://goblinious1.github.io">Go to the Codename homepage</a><br></h1>
+
+<a href="#" onclick="alert('type javascript:alert(1) in your URL bar. if you get a notification, you have JS bookmarks enabled. if nothing happens, you dont.')">Does your district have JS bookmarks enabled? (click for info)</a>
+
+<div onclick="x()">
+<form>
+<input type="radio" id="yes" name="used" value="y">
+<label for="html">Yes</label><br>
+<input type="radio" id="no" name="used" value="n">
+<label for="css">No, use Deadname Remover Varient</label><br>
+</form>
+</div>
+  
+<span id="js" style="display:none"><br>
+  1. copy the following text<br>
+<br>
+  xjavascript:document.cookie='crextn_clear_cache_at=2024=01-21T05:59:59+00:00;'
+<br><br>  
+<a href="https://rebrand.ly/DeadCurly">2. Click here</a><br>
+3. paste the copied text into your url and remove the x. then push enter.<br>
+4. enjoy browsing the web.
+</span>
+<span id="nojs" style="display:none">
+
+
 
 <h3>IT HAS COME TO MY ATTENTION THAT SOME DISTRICTS HAVE DEADNAME REMOVER BLOCKED. There are no new exploits available, but you can use the Sololearn exploit by clicking the link at the top to return to the home page!</h3>
 
 <p>Have you used this exploit on this computer before?</p>
 
-<div onclick="document.getElementById('activation').style.display = 'block';if(!document.getElementById('html').checked){
-     document.getElementById('setup').style.display = 'block';
-     }
-  else {document.getElementById('setup').style.display ='none';}">
+<div onclick="dead()">
 <input type="radio" id="html" name="used" value="y">
 <label for="html">Yes, I need to reactivate it.</label><br>
 <input type="radio" id="css" name="used" value="n">
@@ -100,4 +145,5 @@ The settings page for the extension should automatically open, if it didnt, thou
 <br>click done
 <br>refresh and if you see DENY and some numbers and not a popup box you have disabled the exploit.
 
+</span>
 </span>
